@@ -1,0 +1,14 @@
+{
+  "name": "henrytech",
+  "version": "1.0.0",
+  "description": "testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --collectCoverage=false"
+  },
+  "homepage": "https://github.com/soyHenry/Entrevistas-Tecnicas#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "jest": "^24.9.0"
+  }
+}

@@ -1,0 +1,28 @@
+//Dado un arreglo de valores de acciones, 
+//encontrar la mayor ganancia posible de comprar a un horario y vender después. 
+//acciones: [4, 3, 2, 5, 11] mayor ganancia: 9;
+
+function mayorGanancia(arrayAcciones) {
+    let viejoMaximo = arrayAcciones[1] - arrayAcciones[0];
+    for (i = 0; i < arrayAcciones.length; i++) {
+        for (j = 1; i < arrayAcciones.length; i++) {
+            let gananciaPotencial = arrayAcciones[i] - arrayAcciones[j];
+            
+            if(viejoMaximo < gananciaPotencial){
+                viejoMaximo = gananciaPotencial;
+            } 
+        }
+
+    }
+    return viejoMaximo;
+}
+
+
+
+
+
+
+
+
+
+
